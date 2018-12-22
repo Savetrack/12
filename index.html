@@ -13,7 +13,7 @@ body {
     margin: 0;
 }
 </style>
-<button onclick="playVid()"" >Enviar</button>
+<button onclick="playVid()" id="Boton" >Enviar</button>
 </head>
 
 <body>
@@ -21,10 +21,11 @@ body {
   <source src="Imagenes/Savetrack.mp4" type="video/mp4" />
 </video>
  <script type="text/javascript">
- var vid = document.getElementById("myVideo"); 
-
+var vid = document.getElementById("myVideo"); 
+var Bot = document.getElementById("Boton");  
 function playVid() { 
-    vid.play(); 
+$("Bot").remove();   
+vid.play(); 
 }
   
   
