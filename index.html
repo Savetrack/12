@@ -23,27 +23,19 @@ button:active {
 	
 }
 
+video#backgroundvid { 
 
-#video_background { 
-	position: relative ; 
-	bottom: 0px; 
-	right: 0px; 
-	min-width: 100%; 
-	min-height: 100%; 
-	width: auto; 
-	height: auto; 
-	z-index: -1000; 
-	overflow: hidden; 
+position: fixed; right: 0; bottom: 0;
 
-#video_pattern { 
-	background:#fff; 
-	position: fixed; 
-	opacity: 0.8; 
-	left: 0px; 
-	top: 0px; 
-	width: 100%; 
-	height: 100%; 
-	z-index: 1; 
+min-width: 100%; min-height: 100%;
+
+width: auto; height: auto; z-index: -100;
+
+background: url(polina.jpg) no-repeat;
+
+background-size: cover; 
+
+}
 </style>
 <button  onclick="playVid()" id="boton"><img src="Imagenes/BOTO.png"></button>
  
@@ -51,7 +43,7 @@ button:active {
 </head>
 
 <body>
- <video id="video_background"  class="video"/>
+ <video id="backgroundvid"  class="video"/>
   <source src="Imagenes/Savetrack.mp4" type="video/mp4" />
 </video/>
  
