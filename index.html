@@ -9,7 +9,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="shortcut icon" href="Imagenes/1545144470.ico"/>  
  <style type="text/css">
-<body background="Imagenes/Savetrack.mp4"> 
+
 	 
 button {
  position: center ;
@@ -21,8 +21,13 @@ button:active {
 }
 
 video#backgroundvid { 
-	 height: auto;
-	width: 100%;
+	position: absolute;
+ left: 0;
+ top: 0;
+ width: 100%;
+ height: auto;
+ z-index: -10;
+ visibility: visible;
 }
 </style>
 <button  onclick="playVid()" id="boton"><img src="Imagenes/BOTO.png"></button>
@@ -31,7 +36,9 @@ video#backgroundvid {
 </head>
 
 <body>
-
+ <video id="backgroundvid"  class="video"/>
+  <source src="Imagenes/Savetrack.mp4" type="video/mp4" />
+</video/>
  
  
  <script type="text/javascript">
