@@ -24,17 +24,11 @@ button:active {
 }
 
 video#backgroundvid { 
-
-position: fixed; right: 0; bottom: 0;
-
-min-width: 100%; min-height: 100%;
-
-width: auto; height: auto; z-index: -100;
-
-background: url(Imagenes/Savetrack.mp4) no-repeat;
-
-background-size: cover; 
-
+background: url(Imagenes/Savetrack.mp4) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 </style>
 <button  onclick="playVid()" id="boton"><img src="Imagenes/BOTO.png"></button>
